@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="430" viewBox="80 300 1360 430" role="img" aria-labelledby="title desc">
+  <title id="title">WeDoCodes Logo Vector</title>
+  <desc id="desc">WeDoCodes logo with circular orange-pink gradient icon, white code symbol, slightly bold brand text, and subtitle.</desc>
+
+  <defs>
+    <!-- Main icon gradient -->
+    <linearGradient id="iconGradient" x1="142" y1="304" x2="471" y2="677" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF9500"/>
+      <stop offset="0.32" stop-color="#FF6A00"/>
+      <stop offset="0.68" stop-color="#FF3D5E"/>
+      <stop offset="1" stop-color="#E91E73"/>
+    </linearGradient>
+
+    <!-- Codes text gradient -->
+    <linearGradient id="codesGradient" x1="970" y1="390" x2="1395" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FF7A00"/>
+      <stop offset="0.35" stop-color="#FF5B1A"/>
+      <stop offset="0.68" stop-color="#FF3D5E"/>
+      <stop offset="1" stop-color="#E91E63"/>
+    </linearGradient>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="1536" height="1024" fill="#FFFFFF"/>
+
+  <!-- Icon -->
+  <circle cx="296" cy="512" r="185" fill="url(#iconGradient)" filter="url(#softShadow)"/>
+
+  <!-- Code symbol: light stroke, separated, not touching -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M236 484 L190 513 L236 542"/>
+    <path d="M316 465 L276 559"/>
+    <path d="M357 484 L405 513 L357 542"/>
+  </g>
+
+  <!-- Brand name: slightly bold, editable text -->
+  <g font-family="Inter, Segoe UI, Arial, Helvetica, sans-serif" font-size="146" font-weight="620" letter-spacing="-5">
+    <text x="545" y="503" fill="#050505">WeDo</text>
+    <text x="969" y="503" fill="url(#codesGradient)">Codes</text>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="550" y="584"
+        font-family="Inter, Segoe UI, Arial, Helvetica, sans-serif"
+        font-size="47"
+        font-weight="400"
+        letter-spacing="2.5"
+        fill="#555555">Software and Cyber security solutions</text>
+</svg>
