@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" role="img" aria-label="Healthcare quality and training visual placeholder">
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#effcfb"/><stop offset="1" stop-color="#a9e7e2"/></linearGradient><linearGradient id="c" x1="0" x2="1"><stop stop-color="#0e939b"/><stop offset="1" stop-color="#7ddbd3"/></linearGradient></defs>
+  <rect width="760" height="430" fill="url(#bg)"/>
+  <rect x="70" y="62" width="290" height="230" rx="26" fill="#fff" opacity=".68"/>
+  <rect x="110" y="105" width="210" height="18" rx="9" fill="#0e939b" opacity=".42"/>
+  <rect x="110" y="145" width="170" height="12" rx="6" fill="#626366" opacity=".20"/>
+  <rect x="110" y="176" width="205" height="12" rx="6" fill="#626366" opacity=".20"/>
+  <rect x="110" y="207" width="130" height="12" rx="6" fill="#626366" opacity=".20"/>
+  <g transform="translate(425 75)">
+    <circle cx="115" cy="115" r="105" fill="#fff" opacity=".46"/>
+    <path d="M54 126h43l20-62 33 119 31-85 18 28h32" fill="none" stroke="url(#c)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M102 256h112" stroke="#0e939b" stroke-width="12" stroke-linecap="round" opacity=".36"/>
+    <path d="M42 256h32" stroke="#0e939b" stroke-width="12" stroke-linecap="round" opacity=".22"/>
+  </g>
+  <path d="M0 380c143-62 274-76 403-38 119 35 238 39 357-14v102H0Z" fill="#0e939b" opacity=".12"/>
+</svg>

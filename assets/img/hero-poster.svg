@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 650" role="img" aria-label="Healthcare training video poster placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#dff7f5"/><stop offset=".45" stop-color="#bfecea"/><stop offset="1" stop-color="#0b6c76"/></linearGradient>
+    <radialGradient id="r" cx="70%" cy="35%" r="60%"><stop offset="0" stop-color="#ffffff" stop-opacity=".65"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+    <filter id="b"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <rect width="1600" height="650" fill="url(#g)"/>
+  <rect width="1600" height="650" fill="url(#r)"/>
+  <g opacity=".42" fill="none" stroke="#ffffff" stroke-width="2">
+    <path d="M120 465c160-115 293-148 430-103 147 49 239 18 363-84 145-119 334-143 562-61"/>
+    <path d="M158 520c206-92 362-105 520-37 115 50 239 49 361-7 144-65 283-63 424-5"/>
+  </g>
+  <g opacity=".28" stroke="#0e939b" stroke-width="1.2">
+    <path d="M210 170h240M256 210h330M184 250h220M1080 180h220M1010 220h360M1130 260h210"/>
+  </g>
+  <g transform="translate(690 195)" opacity=".58">
+    <rect x="0" y="0" width="310" height="210" rx="32" fill="#ffffff" opacity=".22"/>
+    <path d="M64 124h42l22-62 36 110 34-82 18 34h48" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="78" cy="72" r="36" fill="#ffffff" opacity=".25"/>
+    <rect x="183" y="49" width="70" height="12" rx="6" fill="#ffffff" opacity=".42"/>
+    <rect x="183" y="76" width="88" height="10" rx="5" fill="#ffffff" opacity=".30"/>
+  </g>
+  <g opacity=".23" filter="url(#b)"><circle cx="1330" cy="170" r="160" fill="#ffffff"/><circle cx="290" cy="560" r="140" fill="#ffffff"/></g>
+</svg>

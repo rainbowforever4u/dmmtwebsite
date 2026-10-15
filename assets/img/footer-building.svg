@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" role="img" aria-label="Dream Maker office building placeholder">
+  <defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e7faf8"/><stop offset="1" stop-color="#78d9d2"/></linearGradient><linearGradient id="glass" x1="0" x2="1"><stop stop-color="#ffffff" stop-opacity=".84"/><stop offset="1" stop-color="#ffffff" stop-opacity=".36"/></linearGradient></defs>
+  <rect width="760" height="430" fill="url(#bg)"/>
+  <path d="M95 360V140c0-25 20-45 45-45h130c25 0 45 20 45 45v220" fill="url(#glass)" stroke="#ffffff" stroke-width="3"/>
+  <path d="M325 360V95c0-31 25-56 56-56h180c31 0 56 25 56 56v265" fill="#ffffff" opacity=".46" stroke="#ffffff" stroke-width="3"/>
+  <g fill="#0e939b" opacity=".18">
+    <rect x="130" y="130" width="52" height="36" rx="8"/><rect x="210" y="130" width="52" height="36" rx="8"/><rect x="130" y="190" width="52" height="36" rx="8"/><rect x="210" y="190" width="52" height="36" rx="8"/><rect x="130" y="250" width="52" height="36" rx="8"/><rect x="210" y="250" width="52" height="36" rx="8"/>
+    <rect x="370" y="86" width="70" height="45" rx="8"/><rect x="474" y="86" width="70" height="45" rx="8"/><rect x="370" y="160" width="70" height="45" rx="8"/><rect x="474" y="160" width="70" height="45" rx="8"/><rect x="370" y="234" width="70" height="45" rx="8"/><rect x="474" y="234" width="70" height="45" rx="8"/>
+  </g>
+  <path d="M0 365c134-38 251-37 356 3 125 48 255 42 404-22v84H0Z" fill="#043c45" opacity=".22"/>
+</svg>
