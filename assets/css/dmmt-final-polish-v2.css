@@ -1,0 +1,1143 @@
+/* DMMT FINAL POLISH V2
+   Purpose: clean classic site-wide finish, Inter font, flat buttons, centered regular header nav,
+   no glass/shade/shadow effects, and clean quick-search/dropdown styling. */
+
+:root{
+  --dmmt-clean-teal:#00858d;
+  --dmmt-clean-teal-dark:#006f77;
+  --dmmt-clean-text:#263f4a;
+  --dmmt-clean-muted:#60727b;
+  --dmmt-clean-line:#dfe9ec;
+  --dmmt-clean-soft:#f7fafb;
+}
+
+html,
+body,
+body *,
+button,
+input,
+select,
+textarea{
+  font-family:Inter, Arial, Helvetica, sans-serif !important;
+}
+
+
+/* Absolute shade/shadow cleanup requested: no glassy shadows anywhere. */
+*,
+*::before,
+*::after{
+  box-shadow:none !important;
+  text-shadow:none !important;
+}
+
+body{
+  color:var(--dmmt-clean-text) !important;
+  font-size:16px !important;
+  line-height:1.65 !important;
+  font-weight:400 !important;
+  background:#ffffff !important;
+}
+
+p,
+li,
+label,
+input,
+select,
+textarea{
+  font-size:16px !important;
+  line-height:1.65 !important;
+  font-weight:400 !important;
+}
+
+h1{
+  font-size:clamp(34px, 4vw, 48px) !important;
+  line-height:1.15 !important;
+  font-weight:600 !important;
+  letter-spacing:-0.02em !important;
+}
+
+h2{
+  font-size:clamp(28px, 3vw, 36px) !important;
+  line-height:1.2 !important;
+  font-weight:600 !important;
+  letter-spacing:-0.015em !important;
+}
+
+h3,
+h4,
+h5,
+h6{
+  font-weight:500 !important;
+  letter-spacing:0 !important;
+}
+
+.kicker,
+.eyebrow,
+[class*="kicker"],
+[class*="eyebrow"]{
+  font-family:Inter, Arial, Helvetica, sans-serif !important;
+  font-weight:500 !important;
+  letter-spacing:.08em !important;
+}
+
+/* Remove old glass/shade/shadow effects everywhere while preserving layout and content. */
+.card,
+.feature-card,
+.service-card,
+.resource-card,
+.article-card,
+.gallery-card,
+.standard-card,
+.value-card,
+.overlap-card,
+.outcome-mini,
+.process .card,
+.contact-card,
+.quick-card,
+.login-card,
+.register-card,
+.dmmt-simple-service-card,
+.dmmt-other-service-card,
+.dmmt-service-quick-search-card,
+.dmmt-testimonial-card,
+.dmmt-v13-glass-card,
+.dmmt-v13-location-card,
+.dmmt-v13-contact-card,
+.dmmt-chat-panel,
+[class*="glass"],
+[class*="shadow"],
+[class*="shade"]{
+  box-shadow:none !important;
+  filter:none !important;
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
+  text-shadow:none !important;
+}
+
+.card,
+.feature-card,
+.service-card,
+.resource-card,
+.article-card,
+.gallery-card,
+.standard-card,
+.value-card,
+.outcome-mini,
+.process .card,
+.contact-card,
+.quick-card,
+.login-card,
+.register-card,
+.dmmt-simple-service-card,
+.dmmt-other-service-card,
+.dmmt-service-quick-search-card,
+.dmmt-testimonial-card,
+.dmmt-v13-glass-card,
+.dmmt-v13-location-card,
+.dmmt-v13-contact-card{
+  background:#ffffff !important;
+  background-image:none !important;
+  border:1px solid var(--dmmt-clean-line) !important;
+  border-radius:10px !important;
+}
+
+.card::before,
+.card::after,
+.feature-card::before,
+.feature-card::after,
+.service-card::before,
+.service-card::after,
+.resource-card::before,
+.resource-card::after,
+.dmmt-simple-service-card::before,
+.dmmt-simple-service-card::after,
+.dmmt-other-service-card::before,
+.dmmt-other-service-card::after,
+.dmmt-service-quick-search-card::before,
+.dmmt-service-quick-search-card::after,
+[class*="glass"]::before,
+[class*="glass"]::after{
+  display:none !important;
+  content:none !important;
+  box-shadow:none !important;
+  background:none !important;
+}
+
+.section,
+.section.alt,
+.quick-request,
+main section,
+section[class*="alt"],
+section[class*="shade"],
+section[class*="glass"]{
+  background:#ffffff !important;
+  background-image:none !important;
+  box-shadow:none !important;
+}
+
+/* Header: SRH-style centered navigation, regular weight, clean dropdown. */
+.dmmt-srh-header{
+  box-shadow:none !important;
+  border-bottom:1px solid var(--dmmt-clean-line) !important;
+}
+
+.dmmt-srh-nav > ul{
+  justify-content:center !important;
+  text-align:center !important;
+  gap:28px !important;
+}
+
+.dmmt-srh-nav a,
+.dmmt-srh-nav li > a,
+.dmmt-srh-opinion,
+.dmmt-srh-visit,
+.dmmt-srh-visit span,
+.dmmt-srh-visit strong{
+  font-weight:400 !important;
+  text-align:center !important;
+  letter-spacing:0 !important;
+}
+
+.dmmt-srh-nav a{
+  font-size:16px !important;
+  color:#60666c !important;
+}
+
+.dmmt-srh-nav li.active > a,
+.dmmt-srh-nav a:hover{
+  color:var(--dmmt-clean-teal) !important;
+  font-weight:400 !important;
+}
+
+.dmmt-srh-testimonial-tab{
+  font-weight:400 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+  box-shadow:none !important;
+  background:var(--dmmt-clean-teal) !important;
+  border:1px solid var(--dmmt-clean-teal) !important;
+}
+
+.dmmt-srh-dropdown{
+  background:#ffffff !important;
+  background-image:none !important;
+  border:1px solid var(--dmmt-clean-line) !important;
+  border-radius:6px !important;
+  box-shadow:none !important;
+  padding:12px !important;
+}
+
+.dmmt-srh-dropdown-title{
+  font-weight:400 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+  color:var(--dmmt-clean-muted) !important;
+  margin-bottom:8px !important;
+}
+
+.dmmt-srh-dropdown-grid{
+  gap:2px 10px !important;
+}
+
+.dmmt-srh-dropdown-grid a{
+  min-height:34px !important;
+  padding:7px 8px !important;
+  border:0 !important;
+  border-radius:4px !important;
+  background:#ffffff !important;
+  box-shadow:none !important;
+  color:#3e4a50 !important;
+  font-size:14px !important;
+  font-weight:400 !important;
+  text-align:left !important;
+}
+
+.dmmt-srh-dropdown-grid a:hover{
+  background:var(--dmmt-clean-soft) !important;
+  color:var(--dmmt-clean-teal) !important;
+}
+
+/* Clean quick-service search card: no decorative outline/glow behind dropdown or button. */
+body.dmmt-home-page .dmmt-service-quick-search-card{
+  grid-column:1 / -1 !important;
+  background:#ffffff !important;
+  background-image:none !important;
+  border:1px solid var(--dmmt-clean-line) !important;
+  border-radius:10px !important;
+  box-shadow:none !important;
+  padding:24px !important;
+  min-height:auto !important;
+  display:grid !important;
+  grid-template-columns:minmax(0, .9fr) minmax(300px, 1fr) !important;
+  gap:22px !important;
+  align-items:center !important;
+}
+
+body.dmmt-home-page .dmmt-quick-service-form{
+  display:flex !important;
+  align-items:center !important;
+  gap:12px !important;
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  outline:0 !important;
+}
+
+body.dmmt-home-page .dmmt-quick-service-form select,
+select{
+  height:44px !important;
+  min-height:44px !important;
+  padding:0 14px !important;
+  border:1px solid #ccd8dc !important;
+  border-radius:6px !important;
+  background:#ffffff !important;
+  background-image:none !important;
+  color:var(--dmmt-clean-text) !important;
+  font-size:15px !important;
+  font-weight:400 !important;
+  box-shadow:none !important;
+  outline:0 !important;
+}
+
+body.dmmt-home-page .dmmt-quick-service-form select:focus,
+select:focus,
+input:focus,
+textarea:focus{
+  border-color:var(--dmmt-clean-teal) !important;
+  box-shadow:none !important;
+  outline:0 !important;
+}
+
+/* Unified button style. Icon-only controls are excluded to keep header/search/menu working. */
+a.btn,
+.btn,
+.btn-primary,
+.btn-secondary,
+.button,
+.button-primary,
+a[class*="button"],
+a[class*="btn"],
+input[type="submit"],
+input[type="button"],
+form:not(.dmmt-srh-search) button:not(.dmmt-mobile-menu-button):not(.dmmt-chat-close):not(.dmmt-chat-back),
+.dmmt-v14-home-view,
+.dmmt-other-service-card span,
+.dmmt-quick-service-form button,
+.newsletter-form button,
+.footer-newsletter button,
+.dmmt-chat-whatsapp-link{
+  min-width:132px !important;
+  width:auto !important;
+  height:44px !important;
+  min-height:44px !important;
+  padding:0 18px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:8px !important;
+  border-radius:6px !important;
+  border:1px solid var(--dmmt-clean-teal) !important;
+  background:var(--dmmt-clean-teal) !important;
+  background-image:none !important;
+  color:#ffffff !important;
+  font-family:Inter, Arial, Helvetica, sans-serif !important;
+  font-size:15px !important;
+  line-height:1 !important;
+  font-weight:500 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+  text-decoration:none !important;
+  box-shadow:none !important;
+  text-shadow:none !important;
+  outline:0 !important;
+  cursor:pointer !important;
+}
+
+a.btn:hover,
+.btn:hover,
+.btn-primary:hover,
+.btn-secondary:hover,
+.button:hover,
+.button-primary:hover,
+a[class*="button"]:hover,
+a[class*="btn"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+form:not(.dmmt-srh-search) button:not(.dmmt-mobile-menu-button):not(.dmmt-chat-close):not(.dmmt-chat-back):hover,
+.dmmt-v14-home-view:hover,
+.dmmt-other-service-card:hover span,
+.dmmt-quick-service-form button:hover,
+.newsletter-form button:hover,
+.footer-newsletter button:hover,
+.dmmt-chat-whatsapp-link:hover{
+  background:var(--dmmt-clean-teal-dark) !important;
+  border-color:var(--dmmt-clean-teal-dark) !important;
+  color:#ffffff !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+
+/* Keep search/menu/close/icon buttons clean, not converted to large CTA buttons. */
+.dmmt-srh-search button,
+.dmmt-mobile-menu-button,
+#dmmtChatFab,
+.dmmt-chat-close,
+.dmmt-chat-back{
+  min-width:0 !important;
+  box-shadow:none !important;
+  background:transparent !important;
+  background-image:none !important;
+}
+
+/* Service pages and lower sections: equal spacing, no shaded/effect blocks. */
+.service-detail,
+.service-page-content,
+.dmmt-service-content,
+.dmmt-other-services-section,
+.dmmt-learning-pathway,
+.process,
+.outcome-strip{
+  background:#ffffff !important;
+  background-image:none !important;
+  box-shadow:none !important;
+}
+
+.dmmt-other-services-section{
+  border-top:1px solid var(--dmmt-clean-line) !important;
+  padding-top:56px !important;
+}
+
+.dmmt-other-services-head{
+  text-align:center !important;
+  max-width:760px !important;
+  margin:0 auto 28px !important;
+}
+
+.dmmt-other-services-grid{
+  gap:16px !important;
+  align-items:stretch !important;
+}
+
+.dmmt-other-service-card{
+  padding:18px !important;
+  min-height:150px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:space-between !important;
+}
+
+.dmmt-other-service-card h3{
+  margin-bottom:8px !important;
+}
+
+@media (max-width:900px){
+  p, li, label, input, select, textarea{font-size:15px !important;}
+  .dmmt-srh-nav > ul{justify-content:flex-start !important;text-align:left !important;}
+  .dmmt-srh-nav a{text-align:left !important;}
+  body.dmmt-home-page .dmmt-service-quick-search-card{grid-template-columns:1fr !important;}
+  body.dmmt-home-page .dmmt-quick-service-form{flex-direction:column !important;align-items:stretch !important;}
+  body.dmmt-home-page .dmmt-quick-service-form button{width:100% !important;}
+}
+
+
+
+/* DMMT USER POLISH V4 FINAL OVERRIDES START */
+:root{
+  --dmmt-v4-teal:#078b95;
+  --dmmt-v4-teal-dark:#047984;
+  --dmmt-v4-teal-light:#55cfd2;
+  --dmmt-v4-line:#d7ece9;
+  --dmmt-v4-soft:#f7fbfa;
+  --dmmt-v4-text:#233b50;
+}
+
+/* Header navigation: SRH-like centered, smaller and regular weight */
+.dmmt-srh-header,
+.dmmt-srh-header-inner,
+.dmmt-srh-top-row,
+.dmmt-srh-nav,
+.dmmt-srh-nav > ul,
+.dmmt-srh-nav li,
+.dmmt-srh-has-menu{
+  overflow:visible !important;
+}
+.dmmt-srh-header{
+  z-index:99990 !important;
+}
+.dmmt-srh-nav{
+  text-align:center !important;
+}
+.dmmt-srh-nav > ul{
+  justify-content:center !important;
+  align-items:center !important;
+  gap:18px !important;
+  text-align:center !important;
+}
+.dmmt-srh-nav a{
+  font-size:14px !important;
+  line-height:1.25 !important;
+  font-weight:400 !important;
+  text-align:center !important;
+  letter-spacing:0 !important;
+}
+.dmmt-srh-nav li.active > a,
+.dmmt-srh-nav a:hover{
+  font-weight:400 !important;
+}
+.dmmt-srh-testimonial-tab,
+.dmmt-srh-opinion,
+.dmmt-srh-visit,
+.dmmt-srh-visit strong,
+.dmmt-srh-visit span{
+  font-weight:400 !important;
+}
+
+/* Services dropdown: force reliable hover/focus on home and all inner pages */
+.dmmt-srh-has-menu{
+  position:relative !important;
+  z-index:100000 !important;
+}
+.dmmt-srh-has-menu > .dmmt-srh-dropdown{
+  position:absolute !important;
+  top:calc(100% + 10px) !important;
+  left:0 !important;
+  display:none !important;
+  opacity:0 !important;
+  visibility:hidden !important;
+  pointer-events:none !important;
+  z-index:100001 !important;
+  background:#ffffff !important;
+  border:1px solid var(--dmmt-v4-line) !important;
+  box-shadow:0 18px 34px rgba(0, 74, 83, .10) !important;
+}
+.dmmt-srh-has-menu:hover > .dmmt-srh-dropdown,
+.dmmt-srh-has-menu:focus-within > .dmmt-srh-dropdown,
+.dmmt-srh-has-menu.is-open > .dmmt-srh-dropdown{
+  display:block !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  pointer-events:auto !important;
+}
+.dmmt-srh-dropdown-grid a{
+  box-shadow:none !important;
+  border:0 !important;
+  background:#ffffff !important;
+}
+
+/* Remove unwanted outer outlines around contact / feedback / testimonial forms and wrappers */
+main form.form,
+main .form.js-form,
+main .contact-form-map,
+main .quick-form,
+main .testimonial-form,
+main .feedback-form,
+main .client-testimonial-form,
+main .form-shell,
+main .form-card{
+  border:0 !important;
+  outline:0 !important;
+  box-shadow:none !important;
+  background:transparent !important;
+  background-image:none !important;
+  border-radius:0 !important;
+}
+main .contact-form-map{
+  padding:0 !important;
+}
+main form.form input,
+main form.form select,
+main form.form textarea,
+main .quick-form input,
+main .quick-form select,
+main .quick-form textarea{
+  box-shadow:none !important;
+  outline:0 !important;
+}
+main .feedback-scale label{
+  box-shadow:none !important;
+  background:#ffffff !important;
+  background-image:none !important;
+  border:1px solid #e5efed !important;
+  outline:0 !important;
+}
+
+/* Unified morph-style button treatment across pages, without wrapper outlines */
+main a.primary,
+main a.secondary,
+main a.btn,
+main .btn,
+main .primary,
+main .secondary,
+main .small-btn,
+main .read-more,
+main .dmmt-v14-home-view,
+main .dmmt-service-searchbar button,
+main .dmmt-service-quick-search-card button,
+main .dmmt-service-quick-search-card a,
+main .dmmt-other-service-card span,
+main form.form > button,
+main .form button,
+main button:not(.dmmt-chat-close):not(.dmmt-chat-back):not(.request-popup-close):not(.dmmt-mobile-menu-button):not(.menu-toggle),
+footer .newsletter-form button,
+footer .footer-newsletter button{
+  min-width:138px !important;
+  height:52px !important;
+  min-height:52px !important;
+  padding:0 24px !important;
+  border-radius:999px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:8px !important;
+  font-family:Inter, Arial, Helvetica, sans-serif !important;
+  font-size:15px !important;
+  line-height:1 !important;
+  font-weight:700 !important;
+  text-align:center !important;
+  text-decoration:none !important;
+  white-space:nowrap !important;
+  color:#ffffff !important;
+  border:1px solid rgba(0, 128, 138, .28) !important;
+  outline:0 !important;
+  background:linear-gradient(180deg, var(--dmmt-v4-teal-light) 0%, var(--dmmt-v4-teal) 54%, var(--dmmt-v4-teal-dark) 100%) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.48), inset 0 -1px 0 rgba(0,76,84,.18), 0 14px 26px rgba(0,132,143,.16) !important;
+  filter:none !important;
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease !important;
+}
+main a.primary:hover,
+main a.secondary:hover,
+main a.btn:hover,
+main .btn:hover,
+main .primary:hover,
+main .secondary:hover,
+main .small-btn:hover,
+main .read-more:hover,
+main .dmmt-v14-home-view:hover,
+main .dmmt-service-searchbar button:hover,
+main .dmmt-service-quick-search-card button:hover,
+main .dmmt-service-quick-search-card a:hover,
+main .dmmt-other-service-card span:hover,
+main form.form > button:hover,
+main .form button:hover,
+main button:not(.dmmt-chat-close):not(.dmmt-chat-back):not(.request-popup-close):not(.dmmt-mobile-menu-button):not(.menu-toggle):hover,
+footer .newsletter-form button:hover,
+footer .footer-newsletter button:hover{
+  transform:translateY(-1px) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.56), inset 0 -1px 0 rgba(0,76,84,.18), 0 18px 32px rgba(0,132,143,.22) !important;
+}
+
+/* Keep icon/search/menu/WhatsApp buttons from being converted into large CTA pills */
+.dmmt-srh-search button,
+.header-search button,
+.menu-toggle,
+.dmmt-mobile-menu-button,
+.dmmt-chat-fab,
+.dmmt-chat-close,
+.dmmt-chat-back,
+.request-popup-close{
+  min-width:0 !important;
+  height:auto !important;
+  min-height:0 !important;
+  padding:0 !important;
+  border-radius:inherit !important;
+}
+.dmmt-srh-search button,
+.header-search button{
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  color:inherit !important;
+}
+
+/* Keep quick service search area clean: no extra panel/outline behind dropdown and button */
+.dmmt-service-quick-search-card,
+.dmmt-service-searchbar,
+.dmmt-service-quick-search-card .dmmt-service-searchbar,
+.dmmt-service-quick-search-card form,
+.dmmt-service-quick-search-card .quick-service-form{
+  outline:0 !important;
+  box-shadow:none !important;
+  background-image:none !important;
+}
+.dmmt-service-quick-search-card select,
+.dmmt-service-searchbar select{
+  box-shadow:none !important;
+  outline:0 !important;
+}
+
+@media(max-width:900px){
+  .dmmt-srh-nav > ul{gap:0 !important;}
+  .dmmt-srh-nav a{font-size:15px !important;text-align:left !important;}
+  main a.primary,
+  main a.secondary,
+  main a.btn,
+  main .btn,
+  main .primary,
+  main .secondary,
+  main .small-btn,
+  main .read-more,
+  main .dmmt-v14-home-view,
+  main form.form > button,
+  main .form button{
+    width:100% !important;
+    max-width:100% !important;
+  }
+}
+/* DMMT USER POLISH V4 FINAL OVERRIDES END */
+
+/* DMMT BUTTON EFFECT CORRECTION V5 START
+   User correction: keep the Find a Service page buttons in their previous morph style,
+   and apply that SAME effect to the rest of the website buttons without changing content.
+*/
+:root{
+  --dmmt-v5-teal:#0a8792;
+  --dmmt-v5-teal-dark:#006f77;
+  --dmmt-v5-teal-deep:#005f66;
+  --dmmt-v5-line:#d7e8eb;
+}
+
+/* Remove any leftover heavy/glassy button look from the V4 pass. */
+a.btn,
+.btn,
+.btn-primary,
+.btn-secondary,
+.button,
+.button-primary,
+a[class*="button"]:not(.dmmt-mobile-menu-button):not(.dmmt-chat-fab):not(.dmmt-chat-close):not(.dmmt-chat-back):not(.request-popup-close),
+a[class*="btn"]:not(.dmmt-mobile-menu-button):not(.dmmt-chat-fab):not(.dmmt-chat-close):not(.dmmt-chat-back):not(.request-popup-close),
+.read-more,
+.primary,
+.secondary,
+.small-btn,
+input[type="submit"],
+input[type="button"],
+main button:not(.dmmt-mobile-menu-button):not(.menu-toggle):not(.dmmt-chat-close):not(.dmmt-chat-back):not(.request-popup-close):not(.dmmt-srh-search button):not(.header-search button),
+form:not(.dmmt-srh-search) button:not(.dmmt-mobile-menu-button):not(.menu-toggle):not(.dmmt-chat-close):not(.dmmt-chat-back):not(.request-popup-close),
+.dmmt-v14-home-view,
+.dmmt-other-service-card span,
+.dmmt-service-searchbar button,
+.dmmt-quick-service-form button,
+.dmmt-service-quick-search-card button,
+.quick-form button,
+.form button,
+.simple-form button,
+.demo-login-form button,
+.dmmt-register-form button,
+.dmmt-feedback-btn,
+.newsletter-form button,
+.footer-newsletter button,
+.dmmt-chat-whatsapp-link,
+.access-btn{
+  min-width:138px !important;
+  width:auto !important;
+  height:48px !important;
+  min-height:48px !important;
+  max-height:48px !important;
+  padding:0 24px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:8px !important;
+  border-radius:999px !important;
+  border:1px solid rgba(10,135,146,.26) !important;
+  outline:0 !important;
+  background:linear-gradient(145deg, #12a3ad 0%, #087b85 100%) !important;
+  color:#ffffff !important;
+  font-family:Inter, Arial, Helvetica, sans-serif !important;
+  font-size:14px !important;
+  line-height:1 !important;
+  font-weight:500 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+  text-decoration:none !important;
+  box-shadow:8px 8px 18px rgba(10,67,74,.12), -5px -5px 14px rgba(255,255,255,.82), inset 0 1px 0 rgba(255,255,255,.28) !important;
+  text-shadow:none !important;
+  filter:none !important;
+  cursor:pointer !important;
+  transition:background .18s ease, transform .18s ease, box-shadow .18s ease !important;
+  white-space:nowrap !important;
+}
+
+a.btn:hover,
+.btn:hover,
+.btn-primary:hover,
+.btn-secondary:hover,
+.button:hover,
+.button-primary:hover,
+a[class*="button"]:not(.dmmt-mobile-menu-button):not(.dmmt-chat-fab):not(.dmmt-chat-close):not(.dmmt-chat-back):not(.request-popup-close):hover,
+a[class*="btn"]:not(.dmmt-mobile-menu-button):not(.dmmt-chat-fab):not(.dmmt-chat-close):not(.dmmt-chat-back):not(.request-popup-close):hover,
+.read-more:hover,
+.primary:hover,
+.secondary:hover,
+.small-btn:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+main button:not(.dmmt-mobile-menu-button):not(.menu-toggle):not(.dmmt-chat-close):not(.dmmt-chat-back):not(.request-popup-close):hover,
+form:not(.dmmt-srh-search) button:not(.dmmt-mobile-menu-button):not(.menu-toggle):not(.dmmt-chat-close):not(.dmmt-chat-back):not(.request-popup-close):hover,
+.dmmt-v14-home-view:hover,
+.dmmt-other-service-card:hover span,
+.dmmt-service-searchbar button:hover,
+.dmmt-quick-service-form button:hover,
+.dmmt-service-quick-search-card button:hover,
+.quick-form button:hover,
+.form button:hover,
+.simple-form button:hover,
+.demo-login-form button:hover,
+.dmmt-register-form button:hover,
+.dmmt-feedback-btn:hover,
+.newsletter-form button:hover,
+.footer-newsletter button:hover,
+.dmmt-chat-whatsapp-link:hover,
+.access-btn:hover{
+  background:linear-gradient(145deg, #087b85 0%, #005f66 100%) !important;
+  color:#ffffff !important;
+  transform:translateY(-1px) !important;
+  box-shadow:10px 10px 22px rgba(10,67,74,.16), -6px -6px 16px rgba(255,255,255,.85), inset 0 1px 0 rgba(255,255,255,.22) !important;
+}
+
+/* Exact protection for Find a Service page: View Service stays as the original compact morph pill, not the oversized V4 version. */
+.dmmt-find-service-page .dmmt-service-card .read-more,
+body .dmmt-find-service-page .dmmt-service-card .read-more{
+  min-width:138px !important;
+  height:48px !important;
+  min-height:48px !important;
+  max-height:48px !important;
+  padding:0 24px !important;
+  border-radius:999px !important;
+  background:linear-gradient(145deg, #12a3ad 0%, #087b85 100%) !important;
+  border:1px solid rgba(10,135,146,.26) !important;
+  box-shadow:8px 8px 18px rgba(10,67,74,.12), -5px -5px 14px rgba(255,255,255,.82), inset 0 1px 0 rgba(255,255,255,.28) !important;
+  font-size:14px !important;
+  font-weight:500 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+  color:#ffffff !important;
+}
+
+/* Do not convert header search/menu/chat/icon controls into CTA pills. */
+.dmmt-srh-search button,
+.header-search button,
+.menu-toggle,
+.dmmt-mobile-menu-button,
+.dmmt-mobile-login-icon,
+.dmmt-chat-fab,
+.dmmt-chat-close,
+.dmmt-chat-back,
+.request-popup-close,
+button[aria-label*="menu" i],
+button[aria-controls]{
+  min-width:0 !important;
+  max-width:none !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  padding:0 !important;
+  background:transparent !important;
+  background-image:none !important;
+  border:0 !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+.dmmt-mobile-menu-button,
+button[aria-label*="menu" i],
+button[aria-controls]{
+  width:46px !important;
+  height:46px !important;
+  min-width:46px !important;
+  min-height:46px !important;
+  border-radius:13px !important;
+  border:1px solid rgba(0, 135, 145, 0.24) !important;
+  background:#ffffff !important;
+}
+.dmmt-srh-search button,
+.header-search button{
+  color:inherit !important;
+}
+
+/* Keep top SRH tab container shape while giving it the same soft morph feel. */
+.dmmt-srh-testimonial-tab,
+.top-tab{
+  min-width:230px !important;
+  height:44px !important;
+  min-height:44px !important;
+  max-height:44px !important;
+  padding:0 22px !important;
+  border-radius:16px 16px 0 0 !important;
+  border:1px solid rgba(10,135,146,.26) !important;
+  background:linear-gradient(145deg, #12a3ad 0%, #087b85 100%) !important;
+  color:#ffffff !important;
+  box-shadow:6px 6px 16px rgba(10,67,74,.12), -4px -4px 12px rgba(255,255,255,.75), inset 0 1px 0 rgba(255,255,255,.28) !important;
+}
+.dmmt-srh-testimonial-tab:hover,
+.top-tab:hover{
+  background:linear-gradient(145deg, #087b85 0%, #005f66 100%) !important;
+  color:#ffffff !important;
+}
+
+/* Keep form fields / dropdowns clean: no outer outline or wrapper behind the button/dropdown. */
+.dmmt-service-quick-search-card,
+.dmmt-service-searchbar,
+.dmmt-quick-service-form,
+.dmmt-service-quick-search-card form,
+.dmmt-service-quick-search-card .quick-service-form,
+main form.form,
+main .form.js-form,
+main .contact-form-map,
+main .quick-form,
+main .testimonial-form,
+main .feedback-form,
+main .client-testimonial-form,
+main .form-shell,
+main .form-card{
+  outline:0 !important;
+  box-shadow:none !important;
+  background-image:none !important;
+  border-color:transparent !important;
+}
+
+@media(max-width:560px){
+  a.btn,.btn,.btn-primary,.btn-secondary,.button,.button-primary,
+  .read-more,.primary,.secondary,.small-btn,input[type="submit"],input[type="button"],
+  main button:not(.dmmt-mobile-menu-button):not(.menu-toggle):not(.dmmt-chat-close):not(.dmmt-chat-back):not(.request-popup-close),
+  .dmmt-v14-home-view,.dmmt-service-searchbar button,.dmmt-quick-service-form button,
+  .quick-form button,.form button,.simple-form button,.dmmt-feedback-btn,.access-btn{
+    width:100% !important;
+    max-width:100% !important;
+  }
+  .dmmt-srh-testimonial-tab,.top-tab{min-width:0 !important;width:auto !important;}
+}
+/* DMMT BUTTON EFFECT CORRECTION V5 END */
+
+/* DMMT NORMAL RECTANGLE BUTTONS V6 START
+   User request: remove morph/glass/icon-like effects and make normal curved rectangle buttons.
+   Your Opinion Matters top tab is intentionally protected and left unchanged.
+*/
+:root{
+  --dmmt-button-bg:#078a92;
+  --dmmt-button-bg-hover:#066f77;
+  --dmmt-button-border:#078a92;
+  --dmmt-button-radius:10px;
+  --dmmt-button-height:44px;
+  --dmmt-button-min-width:136px;
+}
+
+/* Normal website CTA buttons only. Header icons, search, WhatsApp fab, close buttons, and Your Opinion Matters are excluded. */
+main a.btn,
+main .btn,
+main a.primary,
+main .primary,
+main a.secondary,
+main .secondary,
+main .small-btn,
+main .read-more,
+main .pill,
+main .tab-btn,
+main .dmmt-v14-home-view,
+main .dmmt-standard-button,
+main .dmmt-training-visit-btn,
+main .dmmt-service-searchbar button,
+main .dmmt-service-quick-search-card button,
+main .dmmt-quick-service-form button,
+main form.form > button,
+main .form button,
+main .quick-form button,
+main .simple-form button,
+main .testimonial-form button,
+main .feedback-form button,
+main .client-testimonial-form button,
+main .demo-login-form button,
+main .dmmt-register-form button,
+main input[type="submit"],
+main input[type="button"],
+main button:not(.dmmt-mobile-menu-button):not(.menu-toggle):not(.dmmt-chat-close):not(.dmmt-chat-back):not(.dmmt-chat-fab):not(.request-popup-close),
+footer .newsletter-form button,
+footer .footer-newsletter button,
+.dmmt-chat-whatsapp-link{
+  width:auto !important;
+  min-width:var(--dmmt-button-min-width) !important;
+  max-width:none !important;
+  height:var(--dmmt-button-height) !important;
+  min-height:var(--dmmt-button-height) !important;
+  max-height:var(--dmmt-button-height) !important;
+  padding:0 22px !important;
+  margin:0 !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:8px !important;
+  border-radius:var(--dmmt-button-radius) !important;
+  border:1px solid var(--dmmt-button-border) !important;
+  outline:0 !important;
+  background:var(--dmmt-button-bg) !important;
+  background-image:none !important;
+  color:#ffffff !important;
+  font-family:Inter, Arial, Helvetica, sans-serif !important;
+  font-size:14px !important;
+  line-height:1 !important;
+  font-weight:600 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+  text-decoration:none !important;
+  text-align:center !important;
+  white-space:nowrap !important;
+  box-shadow:none !important;
+  text-shadow:none !important;
+  filter:none !important;
+  transform:none !important;
+  opacity:1 !important;
+  cursor:pointer !important;
+  transition:background-color .15s ease, border-color .15s ease, color .15s ease !important;
+}
+
+main a.btn:hover,
+main .btn:hover,
+main a.primary:hover,
+main .primary:hover,
+main a.secondary:hover,
+main .secondary:hover,
+main .small-btn:hover,
+main .read-more:hover,
+main .pill:hover,
+main .tab-btn:hover,
+main .dmmt-v14-home-view:hover,
+main .dmmt-standard-button:hover,
+main .dmmt-training-visit-btn:hover,
+main .dmmt-service-searchbar button:hover,
+main .dmmt-service-quick-search-card button:hover,
+main .dmmt-quick-service-form button:hover,
+main form.form > button:hover,
+main .form button:hover,
+main .quick-form button:hover,
+main .simple-form button:hover,
+main .testimonial-form button:hover,
+main .feedback-form button:hover,
+main .client-testimonial-form button:hover,
+main .demo-login-form button:hover,
+main .dmmt-register-form button:hover,
+main input[type="submit"]:hover,
+main input[type="button"]:hover,
+main button:not(.dmmt-mobile-menu-button):not(.menu-toggle):not(.dmmt-chat-close):not(.dmmt-chat-back):not(.dmmt-chat-fab):not(.request-popup-close):hover,
+footer .newsletter-form button:hover,
+footer .footer-newsletter button:hover,
+.dmmt-chat-whatsapp-link:hover{
+  background:var(--dmmt-button-bg-hover) !important;
+  background-image:none !important;
+  border-color:var(--dmmt-button-bg-hover) !important;
+  color:#ffffff !important;
+  box-shadow:none !important;
+  transform:none !important;
+  filter:none !important;
+}
+
+main a.btn:focus,
+main .btn:focus,
+main a.primary:focus,
+main .primary:focus,
+main a.secondary:focus,
+main .secondary:focus,
+main .small-btn:focus,
+main .read-more:focus,
+main .pill:focus,
+main .tab-btn:focus,
+main .dmmt-v14-home-view:focus,
+main .dmmt-standard-button:focus,
+main button:not(.dmmt-mobile-menu-button):not(.menu-toggle):not(.dmmt-chat-close):not(.dmmt-chat-back):not(.dmmt-chat-fab):not(.request-popup-close):focus,
+.dmmt-chat-whatsapp-link:focus{
+  outline:2px solid rgba(7,138,146,.24) !important;
+  outline-offset:2px !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
+
+/* Never change these special/icon controls into standard buttons. */
+.dmmt-srh-testimonial-tab,
+.dmmt-srh-testimonial-tab:hover,
+.top-tab,
+.top-tab:hover,
+.dmmt-srh-search button,
+.header-search button,
+.menu-toggle,
+.dmmt-mobile-menu-button,
+.dmmt-mobile-login-icon,
+.dmmt-chat-fab,
+.dmmt-chat-close,
+.dmmt-chat-back,
+.request-popup-close,
+button[aria-label*="menu" i],
+button[aria-controls]{
+  box-shadow:revert-layer;
+}
+
+.dmmt-srh-search button,
+.header-search button{
+  min-width:0 !important;
+  width:auto !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  padding:0 !important;
+  border:0 !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  background-image:none !important;
+  box-shadow:none !important;
+  transform:none !important;
+  color:inherit !important;
+}
+
+.dmmt-chat-fab,
+.dmmt-chat-close,
+.dmmt-chat-back,
+.request-popup-close,
+.menu-toggle,
+.dmmt-mobile-menu-button,
+.dmmt-mobile-login-icon{
+  transform:none !important;
+  filter:none !important;
+  text-shadow:none !important;
+}
+
+/* Service quick-search button/dropdown must remain clean with no background outline or glow behind it. */
+.dmmt-service-quick-search-card,
+.dmmt-service-searchbar,
+.dmmt-service-quick-search-card .dmmt-service-searchbar,
+.dmmt-service-quick-search-card form,
+.dmmt-service-quick-search-card .quick-service-form,
+.dmmt-quick-service-form{
+  outline:0 !important;
+  box-shadow:none !important;
+  background-image:none !important;
+}
+.dmmt-service-quick-search-card select,
+.dmmt-service-searchbar select{
+  box-shadow:none !important;
+  background-image:none !important;
+}
+
+@media(max-width:560px){
+  main a.btn,
+  main .btn,
+  main a.primary,
+  main .primary,
+  main a.secondary,
+  main .secondary,
+  main .small-btn,
+  main .read-more,
+  main .pill,
+  main .tab-btn,
+  main .dmmt-v14-home-view,
+  main .dmmt-standard-button,
+  main .dmmt-training-visit-btn,
+  main .dmmt-service-searchbar button,
+  main .dmmt-service-quick-search-card button,
+  main form.form > button,
+  main .form button,
+  main .quick-form button,
+  main button:not(.dmmt-mobile-menu-button):not(.menu-toggle):not(.dmmt-chat-close):not(.dmmt-chat-back):not(.dmmt-chat-fab):not(.request-popup-close),
+  .dmmt-chat-whatsapp-link{
+    min-width:136px !important;
+    width:auto !important;
+    max-width:100% !important;
+  }
+}
+/* DMMT NORMAL RECTANGLE BUTTONS V6 END */

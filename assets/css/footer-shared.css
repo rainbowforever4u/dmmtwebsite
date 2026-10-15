@@ -1,0 +1,92 @@
+/* Dream Maker shared footer styling. Future footer visual changes can be done here only. */
+
+.srh-style-footer {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  background: linear-gradient(90deg, #00616b 0%, #0fb9b3 100%) !important;
+  background-color: #00616b !important;
+  overflow: visible !important;
+}
+
+.srh-style-footer .footer-main {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 48px 36px 38px !important;
+  background: linear-gradient(90deg, #00616b 0%, #0fb9b3 100%) !important;
+  background-color: #00616b !important;
+}
+
+.srh-style-footer .footer-bottom {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  background: linear-gradient(90deg, #00616b 0%, #0fb9b3 100%) !important;
+  border-top: 1px solid rgba(255,255,255,.22) !important;
+}
+
+.srh-style-footer .bottom-inner {
+  width: 100% !important;
+  max-width: none !important;
+  padding-left: 36px !important;
+  padding-right: 36px !important;
+}
+
+.srh-style-footer,
+.srh-style-footer a,
+.srh-style-footer p,
+.srh-style-footer label,
+.srh-style-footer span {
+  color: #ffffff !important;
+  font-weight: 400 !important;
+  opacity: 1 !important;
+}
+
+.srh-style-footer strong {
+  color: #ffffff !important;
+  font-weight: 500 !important;
+}
+
+.srh-style-footer h3,
+.srh-style-footer h4 {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  letter-spacing: .04em !important;
+}
+
+.srh-style-footer .footer-links a,
+.srh-style-footer .footer-quick-col a {
+  color: #ffffff !important;
+  font-weight: 400 !important;
+  opacity: .96 !important;
+}
+
+.srh-style-footer .footer-location,
+.srh-style-footer .footer-location p,
+.srh-style-footer .footer-location a {
+  color: #ffffff !important;
+  overflow: visible !important;
+  white-space: normal !important;
+  text-overflow: unset !important;
+  max-width: none !important;
+  word-break: normal !important;
+  overflow-wrap: anywhere !important;
+}
+
+.srh-style-footer .newsletter-form button {
+  font-weight: 600 !important;
+}
+
+@media (max-width: 900px) {
+  .srh-style-footer .footer-main {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .srh-style-footer .bottom-inner {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
